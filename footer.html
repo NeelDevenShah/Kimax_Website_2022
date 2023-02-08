@@ -1,0 +1,103 @@
+
+				<?php if(isset($_GET['product'])){$product=$_GET['product'];} ?>
+				<div class="container">
+					<div class="row text-center">
+						<div class="col">
+							<span class="top-sub-title text-color-primary appear-animation" data-appear-animation="fadeInUpShorter">FEEL FREE TO ASK ANY QUESTION <br/>TO MAKE US VERY SPECIFIC ABOUT YOUR BUSINESS NEED !.</span>
+							<h2 class="font-weight-bold text-color-dark appear-animation" data-appear-animation="fadeInUpShorter">Get in Touch With Us</h2>
+							<p class="lead appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">If you have any further questions or queries please do not hesitate to get in touch.</p>
+						</div>
+					</div>
+					<div class="row pt-5">
+						<div class="col-lg-4">
+							<div class="row">
+								<div class="col-12 col-md-4 col-lg-12 mb-lg-4 appear-animation" data-appear-animation="fadeInLeftShorter">
+									<div class="icon-box icon-box-style-1">
+										<div class="icon-box-icon">
+											<i class="lnr lnr-apartment text-color-primary"></i>
+										</div>
+										<div class="icon-box-info mt-1">
+											<div class="icon-box-info-title">
+												<h3 class="font-weight-bold text-color-dark text-4 mb-0">Address</h3>
+											</div>
+											<p>  B/102, Ghanshyam Park, Canal Road, Ghodasar, Ahmedabad - 380 050, INDIA</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-4 col-lg-12 mb-lg-4 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="200">
+									<div class="icon-box icon-box-style-1">
+										<div class="icon-box-icon">
+											<i class="lnr lnr-envelope text-color-primary line-height-07"></i>
+										</div>
+										<div class="icon-box-info mt-1">
+											<div class="icon-box-info-title">
+												<h3 class="font-weight-bold text-color-dark text-4 mb-0">Email Address</h3>
+											</div>
+											<p><a href="mailto:kimaxpolytron@gmail.com ">kimaxpolytron@gmail.com </a></p>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-4 col-lg-12 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="400">
+									<div class="icon-box icon-box-style-1">
+										<div class="icon-box-icon">
+											<i class="lnr lnr-phone-handset text-color-primary"></i>
+										</div>
+										<div class="icon-box-info mt-1">
+											<div class="icon-box-info-title">
+												<h3 class="font-weight-bold text-color-dark text-4 mb-0">Phone Number</h3>
+											</div>
+											<p><a href="tel:+91 98240 52053">+91 98240 52053</a> <br/> <a href="tel:+91 94260 77458">+91 94260 77458</a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-8 appear-animation" data-appear-animation="fadeInRightShorter">
+							<form class=" form-style-2" action="contactHandler.php" method="POST">
+								<div class="contact-form-success alert alert-success d-none">
+									<strong>Success!</strong> Your message has been sent to us.
+								</div>
+								<div class="contact-form-error alert alert-danger d-none">
+									<strong>Error!</strong> There was an error sending your message.
+									<span class="mail-error-message d-block"></span>
+								</div>
+								<div class="form-row">
+									<div class="form-group col-md-4">
+										<input type="text" value=""  maxlength="100" class="form-control" name="name" id="name" placeholder="Name" >
+									</div>
+									<div class="form-group col-md-4">
+										<input type="contact" value="" data-msg-required="Please enter contact no." maxlength="13" class="form-control" name="contact" id="contact" placeholder="Contact no" required>
+                                    </div>
+                                    <div class="form-group col-md-4">
+										<input type="email" value="" data-msg-required="Please enter email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" id="email" placeholder="E-mail" required>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-group col">
+										<input type="text" value="<?=@$product?>" maxlength="100" class="form-control" name="subject" id="subject" placeholder="Subject" >
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-group col">
+										<textarea maxlength="5000" rows="5" class="form-control" name="message" id="message" placeholder="Message" ></textarea>
+									</div>
+								</div>
+								<div class="form-row mt-2">
+									<div class="col">
+										<input type="submit" value="SEND MESSAGE" class="btn btn-primary btn-rounded btn-4 font-weight-semibold text-0" >
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<script type="text/javascript">
+    (function() {
+    var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+    link.type = 'image/x-icon';
+    link.rel = 'shortcut icon';
+    link.href = 'img/icon.png';
+    document.getElementsByTagName('head')[0].appendChild(link);
+}());
+</script>
+				
